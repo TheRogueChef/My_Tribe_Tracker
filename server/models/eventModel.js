@@ -19,7 +19,11 @@ const EventSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Details required'],
         minLength: [4, 'Details must be at least 4 characters'],
-        maxLength: 500},
+        maxLength: 5000},
+    likes: {
+        type: Number,
+        default: 0,
+        }   
 }, {timestamps:true})
 
 const Event = mongoose.model('Event', EventSchema);
