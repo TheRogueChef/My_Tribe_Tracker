@@ -36,3 +36,5 @@ const upload = multer({
 });
 
 module.exports = { upload, gridFsStorage };
+
+
